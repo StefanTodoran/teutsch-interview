@@ -1,0 +1,42 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.error-highlight {
+  animation: error-flash 0.5s ease-in-out infinite;
+  border-radius: 2px;
+}
+
+@keyframes error-flash {
+
+  0%,
+  100% {
+    outline: 2px solid transparent;
+  }
+
+  50% {
+    outline: 2px solid red;
+  }
+}
+
+.form-item {
+  margin: 20px 0;
+}
+
+.form-item-label {
+  margin: 0;
+  font-size: 16px;
+}
+
+.form-input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.form-item.has-content .form-item-label {}
