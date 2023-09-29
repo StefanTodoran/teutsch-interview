@@ -1,29 +1,36 @@
 import { useState } from "react";
 
 export function Bar() {
-  const [myVar, setMyVar] = useState({
-    foo: "hello",
-    bar: "world",
-    baz: "helloworld",
+  const [person, setPerson] = useState({ 
+    lastName: "Doe", 
+    firstName: "John",
+    birthDate: new Date(),
+    friends: new Set<string>(["Jane", "Sally"]),
     // ...
   });
 
-  function makeFooUppercase() {
+  /**
+   * Updates lastName property of person.
+   * @param newName The new lastName value.
+   */
+  function getMarried(newName: string) {
+    // TODO
+  }
+  
+  /**
+   * Adds a new friend to person's friends.
+   * @param newChild The new friend value to add.
+   */
+  function makeFriend(newFriend: string) {
     // TODO
   }
 
-  const displayVar: JSX.Element[] = [];
-  Object.keys(myVar).forEach((key) => {
-    const content = `${key}: ${myVar[key as keyof typeof myVar]}`;
-    displayVar.push(<p key={key}>{content}</p>);
-  });
-
   return (
-    <>
-      <p>Bar</p>
-      <section>
-        {displayVar}
-      </section>
-    </>
+    <div className="id-card">
+      <p>First Name: <span>{person.firstName}</span></p>
+      <p>Last Name: <span>{person.lastName}</span></p>
+
+      {/* ... */}
+    </div>
   );
 }
