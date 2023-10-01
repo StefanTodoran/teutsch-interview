@@ -39,4 +39,5 @@
   border-bottom: 1px solid black;
 }
 
+.form-item:focus-within .form-item-label,
 .form-item.has-content .form-item-label {}
