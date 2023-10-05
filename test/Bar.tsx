@@ -19,7 +19,7 @@ export function Bar() {
   
   /**
    * Adds a new friend to person's friends.
-   * @param newChild The new friend value to add.
+   * @param newFriend The new friend value to add.
    */
   function makeFriend(newFriend: string) {
     // TODO
