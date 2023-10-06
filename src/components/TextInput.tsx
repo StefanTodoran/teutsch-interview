@@ -32,8 +32,10 @@ export function TextInput({
   // TODO
 
   return (
-    <div className={"form-item"}>
-      <p className="form-item-label">{label}</p>
+    <div className="form-item">
+      <div className="form-item-label">
+        <p>{label}</p>
+      </div>
 
       <input
         type="text"
