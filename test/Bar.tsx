@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 export function Bar() {
   const [person, setPerson] = useState({ 

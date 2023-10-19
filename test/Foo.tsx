@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 export function Foo() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
